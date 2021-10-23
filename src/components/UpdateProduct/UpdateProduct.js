@@ -21,12 +21,12 @@ const UpdateProduct = () => {
 
     const handleDescriptionChange = e => {
         const updatedDescription = e.target.value;
-        const updatedUser = { name: user.name, description: updatedDescription, price: user.price }
+        const updatedUser = { name: user.name, description: updatedDescription, price: user.price };
         setUser(updatedUser);
     }
     const handlePriceChange = e => {
         const updatedPrice = e.target.value;
-        const updatedUser = { name: user.name, description: user.description, price: updatedPrice }
+        const updatedUser = { name: user.name, description: user.description, price: updatedPrice };
         setUser(updatedUser);
     }
     const handleUpdateUser = e => {
