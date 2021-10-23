@@ -1,5 +1,6 @@
 import { Button } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -37,7 +38,7 @@ const Home = () => {
                                 <p>{product.name}</p>
                                 <h6>{product.price}</h6>
                                 <Button onClick={() => handleDeleteUser(product._id)} variant="danger">Delete</Button>
-                                <Button className='ms-5' variant="success">Update</Button>
+                                <Link to={`products/update/${product._id}`}> <Button className='ms-5' variant="success">Update</Button></Link>
                             </div>
 
                         </div>

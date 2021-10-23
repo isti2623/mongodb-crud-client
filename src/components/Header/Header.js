@@ -32,16 +32,6 @@ const Header = () => {
                                 >
                                     AddProduct
                                 </NavLink>
-                                <NavLink
-                                    className='text-light text-decoration-none'
-                                    to="/updateproduct"
-                                    activeStyle={{
-                                        fontWeight: "bold",
-                                        color: "red"
-                                    }}
-                                >
-                                    UpdateProduct
-                                </NavLink>
                             </Stack>
 
                         </Nav>
